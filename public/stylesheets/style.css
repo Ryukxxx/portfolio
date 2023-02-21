@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.footer {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.footer-section {
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #222222;
+  border-radius: 1rem;
+  border-color: #222222;
+}
+
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 2px 4px;
+}

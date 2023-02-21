@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<!--
+<head>
+    <meta charset="utf-8">
+    <!-- mobile responsive meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Main Stylesheet -->
+<link href="stylesheets/style.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <!-- contact -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="font-size: 70px;">
+                    <b>Contact Me</b>
+                </div>
+            </div>
+            <div class="row contact-bg p-6 rounded mb-6">
+                <div class="col-lg-8 mb-5 mb-lg-1">
+                    <table id="stemplate" class="table">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>contact no</th>
+                                <th>email</th>
+                                <th>relation</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jaymin</td>
+                                <td>1234567890</td>
+                                <td>myemail@gmail.com</td>
+                                <td>mentor</td>
+                            </tr>
+                            <tr>
+                                <td>James</td>
+                                <td>1114567890</td>
+                                <td>james@gmail.com</td>
+                                <td>Professor</td>
+                            </tr>
+                            <tr>
+                                <td>maunik</td>
+                                <td>1234522290</td>
+                                <td>maunik@gmail.com</td>
+                                <td>Colleague</td>
+                            </tr>
+                            <tr>
+                                <td>vrajesh</td>
+                                <td>121111190</td>
+                                <td>vrajesh@gmail.com</td>
+                                <td>Friend</td>
+                            </tr>
+                        </tbody>
+
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <!-- background shapes -->
+        <img src="images/background-shape/feature-bg-2.png" alt="background-shape">
+        <img src="images/background-shape/green-half-cycle.png" alt="background-shape">
+        <img src="images/background-shape/green-dot.png" alt="background-shape">
+        <img src="images/background-shape/service-half-cycle.png" alt="background-shape">
+        <img src="images/background-shape/feature-bg-2.png" alt="background-shape">
+    </section>
+    <!-- footer -->
+    <footer class="footer-section footer" style="background-image: url(images/backgrounds/footer-bg.png);">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h4 class="text-uppercase mb-2">Location</h4>
+                    <p class="lead mb-0"><b>
+                            Scarborough Ontario Canada
+                        </b></p>
+                </div>
+                <!-- footer social icon -->
+                <nav class="col-lg-8 align-self-center mb-5">
+                    <ul class="list-inline text-lg-right text-center">
+
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/Iam_Jaymin?t=tVAlD9Rc1sljj4RoPX3UHg&s=09">
+                                <img src="/images/icons/twitter.png">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/jaymin-pandey-8000151b3/">
+                                <img src="/images/icons/linkedin.png">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/Ryukxxx">
+                                <img src="/images/icons/github.png">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+</body>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
+<script>
+
+    $(function () {
+
+        var template = Handlebars.compile($("#table-template").html());
+        var data = [{
+            date: "01.01.2017",
+            open: true
+        }, {
+            date: "01.01.2018",
+            open: false
+        }];
+
+        $('#stemplate tbody').html(template(data));
+    });
+</script>
+
+</html>
